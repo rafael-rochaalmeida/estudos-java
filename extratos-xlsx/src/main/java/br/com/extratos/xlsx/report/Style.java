@@ -1,14 +1,10 @@
 package br.com.extratos.xlsx.report;
 
 import org.apache.poi.ss.usermodel.HorizontalAlignment;
-import org.apache.poi.ss.usermodel.IndexedColors;
 
 public enum Style {
 
-    // textoNormal( "textoNormal", "TEXT", new ReportStyle("Arial", (short)10, false, false, IndexedColors.BLACK.getIndex(), null, HorizontalAlignment.LEFT, false)),
-    textoNormal("textoNormal", "TEXT", new ReportStyle("Arial", 10, false, false, IndexedColors.BLACK.getIndex(), null, HorizontalAlignment.LEFT, false));
-
-    titulo("titulo", "TEXT", new ReportStyle("Arial", 12, true, false, IndexedColors.BLACK.getIndex(), null, HorizontalAlignment.CENTER, false));
+    textoNormal("textoNormal",  "TEXT", new ReportStyle("Arial", 10,  false, false, StyleColor.BLACK, StyleColor.BLACK, HorizontalAlignment.RIGHT, false));
 
     private final String styleKey;
     private final String styleDataType;

@@ -16,18 +16,17 @@ public class ReportStyle {
     
 
 
-    public ReportStyle(String fontName, Short fontSize, boolean isBold, boolean isItalic, Color fontColor,
-            Color backgroundColor, HorizontalAlignment alignment, boolean multiLine) {
+    public ReportStyle(String fontName, Integer fontSize, boolean isBold, boolean isItalic, StyleColor fontColor,
+            StyleColor backgroundColor, HorizontalAlignment alignment, boolean multiLine) {
         this.fontName = fontName;
         this.fontSize = fontSize.shortValue();
         this.isBold = isBold;
         this.isItalic = isItalic;
-        this.fontColor = fontColor;
-        this.backgroundColor = backgroundColor;
+        this.fontColor = (Color) fontColor.getColor();
+        this.backgroundColor = (Color) backgroundColor.getColor();
         this.alignment = alignment;
         this.multiLine = multiLine;
     }
-
 
 
     public String getFontName() {
