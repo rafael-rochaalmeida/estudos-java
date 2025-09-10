@@ -4,7 +4,7 @@ import org.apache.poi.ss.usermodel.HorizontalAlignment;
 
 public enum Style {
 
-    textoNormal("textoNormal",  "TEXT", new ReportStyle("Arial", 10,  false, false, StyleColor.BLACK, StyleColor.BLACK, HorizontalAlignment.RIGHT, false));
+    textoNormal("textoNormal",  "TEXT", new ReportStyle("Arial", 11,  false, false, StyleColor.BLACK, StyleColor.BLACK, HorizontalAlignment.RIGHT, false));
 
     private final String styleKey;
     private final String styleDataType;
